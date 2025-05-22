@@ -29,9 +29,7 @@ SECRET_KEY = "django-insecure-gp3&c6vr+fr3j@8fef&oouul4^591+70!et3obn%9m3$0825!9
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-                 '127.0.0.1',
-                 '.coursera-apps.org',
-                 '.coursera.org', ]
+                 '127.0.0.1', ]
 
 
 # Application definition
@@ -95,8 +93,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'elearning_db',
-        'USER': 'postgres',
-        'PASSWORD': '2612',
+        'USER': 'your_username',
+        'PASSWORD': 'your_password',
         'HOST':'localhost',
         'PORT':'5432',
     }
@@ -200,8 +198,8 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com" 
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "djangostudent7@gmail.com"  
-EMAIL_HOST_PASSWORD = "fyrkYs-8fymbe-tisdyn" 
+EMAIL_HOST_USER = "your_host_email"  
+EMAIL_HOST_PASSWORD = "your_password" 
 DEFAULT_FROM_EMAIL = "eLearning App <djangostudent7@gmail.com>"
 
 # restrict to frontend
