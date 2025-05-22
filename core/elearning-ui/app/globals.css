@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Mode Support */
+:root {
+  --background: #ffffff;
+  --foreground: #272626;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #272626;
+    --foreground: #ededed;
+  }
+}
+
+/* Global Body Styling */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", Arial, sans-serif;
+  @apply bg-gray-100 dark:bg-gray-800 text-black dark:text-white transition-colors duration-300;
+}
+
+/* Navbar */
+.navbar {
+  @apply bg-white dark:bg-gray-800 shadow-md py-4 px-8 flex justify-between items-center;
+}
+
+.navbar-link {
+  @apply text-gray-700 dark:text-gray-200 hover:text-primary transition;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-primary text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-dark font-semibold py-2 px-4 rounded-lg hover:bg-yellow-400 transition;
+}
+
+/* Section Styling */
+.section {
+  @apply py-16 px-8 max-w-7xl mx-auto;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-center mb-8;
+}
+
+/* Course Cards */
+.course-card {
+  @apply bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden;
+}
+
+.course-card img {
+  @apply w-full h-48 object-cover;
+}
+
+.course-card-content {
+  @apply p-4;
+}
+
+.course-card-title {
+  @apply text-xl font-bold text-gray-900 dark:text-gray-100;
+}
+
+.course-card-link {
+  @apply text-primary hover:underline mt-2 block;
+}
+
+/* Additional Button Styling */
+.btn-primary {
+  background: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/* Ensure text color adjusts based on background brightness */
+.bg-white {
+  @apply text-black;
+}
+
+.bg-gray-800 {
+  @apply text-white;
+}
