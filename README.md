@@ -44,6 +44,12 @@
 - **Python 3.3+** & **Node.js 18+**
 - **PostgreSQL & Redis**
 - **Google Cloud Service Account** (for Google Drive API)
+---
+
+<p align="center">
+  <img src="elearn.gif" alt="Cover photo" />
+</p>
+---
 
 ### 🔹 Backend Setup
 ```bash
