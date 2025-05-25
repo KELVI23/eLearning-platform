@@ -46,9 +46,10 @@
 - **Google Cloud Service Account** (for Google Drive API)
 ---
 
-<p align="center">
-  <img src="elearn.gif" alt="Cover photo" />
+<p align="left">
+  <img src="elearn.gif" alt="Demo gif" />
 </p>
+
 ---
 
 ### 🔹 Backend Setup
